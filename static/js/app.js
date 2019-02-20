@@ -58,16 +58,47 @@ filterButton.on("click", (event => {
 }));
 
 
+var filterType = d3.select(".dropbtn");
 
-///dropdown code
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+//functions for all the various dropdown buttons
+function dropdownFilt() {
+  event.preventDefault();
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function dateFilt() {
     event.preventDefault();
+    document.getElementById("myDropdown").classList.toggle("show");
+    filterType.text("date");
+}
 
-  }
-  
+function cityFilt() {
+  event.preventDefault();
+  document.getElementById("myDropdown").classList.toggle("show");
+  filterType.text("city");
+
+}
+
+function stateFilt() {
+  event.preventDefault();
+  document.getElementById("myDropdown").classList.toggle("show");
+  filterType.text("state");
+
+}
+
+function countryFilt() {
+  event.preventDefault();
+  document.getElementById("myDropdown").classList.toggle("show");
+  filterType.text("country");
+
+}
+
+function shapeFilt() {
+  event.preventDefault();
+  document.getElementById("myDropdown").classList.toggle("show");
+  filterType.text("shape");
+
+}
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {

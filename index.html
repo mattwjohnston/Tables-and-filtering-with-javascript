@@ -38,12 +38,13 @@
                       <li class="filter list-group-item">
                         <label for="date">Enter a</label>
                         <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn">Date</button>
+                            <button onclick="dropdownFilt()" class="dropbtn">date</button>
                             <div id="myDropdown" class="dropdown-content">
-                              <a href="#">City</a>
-                              <a href="#">State</a>
-                              <a href="#">Country</a>
-                              <a href="#">Shape</a>
+                              <a onclick="dateFilt()">date</a>
+                              <a onclick="cityFilt()">city</a>
+                              <a onclick="stateFilt()">state</a>
+                              <a onclick="countryFilt()">country</a>
+                              <a onclick="shapeFilt()">shape</a>
                             </div>
                           </div>
                         <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
